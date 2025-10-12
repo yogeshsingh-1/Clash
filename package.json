@@ -7,13 +7,14 @@
     "start": "node ./dist/index.js",
     "server": "nodemon ./dist/index.js",
     "watch": "tsc -w",
-    "dev": "nodemon ./dist/index.js"
+    "dev": "concurrently \"npm run watch\" \"npm run server\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "concurrently": "^9.2.1",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0"
