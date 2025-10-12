@@ -5,3 +5,6 @@ npm run watch
 npm run dev
 npm run server
 npm start
+
+<!-- Brevo from smtp mail -->
+https://login.brevo.com/
